@@ -7,15 +7,26 @@
     { id: "7SzlKLeBBzY", title:"Zaza - Be Together" }
 ]
 
+var prevId = "";
+
 var vidTitle = document.getElementById("video_title");
 
 function randomVideo() {
 
-    var rand = Math.floor(Math.random() * videos.length);
+    var rand = 0;
+    var newId = "";
+
+    do {
+        rand = Math.floor(Math.random() * videos.length);
+        newId = videos[rand].id
+    }while (newId==prevId);
 
     addEntry("youtube", "Now playing: " + videos[rand].title, "error");
     addEntry("youtube", "Link: https://www.youtube.com/watch?v=" + videos[rand].id, "error");
-    return videos[rand].id;
+
+    prevId = newId;
+
+    return newId;
 }
 
 // 2. This code loads the IFrame Player API code asynchronously.
