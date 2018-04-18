@@ -1,0 +1,108 @@
+﻿#download {
+    top: 5px;
+    left: 5px;
+    width: 550px;
+    height: 450px;
+}
+#youtube {
+    bottom: 5px;
+    left: 5px;
+    width: 550px;
+    height: 250px;
+}
+#gameinfo {
+    top: 5px;
+    right: 5px;
+    width: 550px;
+    height: 250px;
+}
+#player {
+    display: none;
+}
+.consoleWindow {
+    background-color: #727478;
+    position: fixed;
+    color: #ffffff;
+    font-family: "Lucida Console";
+    font-weight: 500;
+    font-size: 10px;
+    opacity: 0.98;
+}
+.consoleWindow .titlebar {
+    height: 25px;
+}
+.consoleWindow .title {
+    padding: 0px;
+    margin: 0;
+    font-family: "Tahoma";
+    font-weight: 1000;
+    font-size: 10px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.consoleWindow .exit {
+    float: right;
+    margin: 0;
+    padding: 0;
+    margin-right: 5px;
+    margin-top: 5px;
+    font-size: 13px;
+}
+.consoleWindow .console {
+    background-color: #525356;
+    width: 95%;
+
+
+
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: scroll;
+}
+.consoleWindow form {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    height: 20px;
+}
+.consoleWindow form .entry {
+    width: 445px;
+    float: left;
+    outline: solid 1px black;
+    height: 100%;
+}
+.consoleWindow form .submit {
+    float: right;
+    background-color: #e4e4e4;
+    border: 0;
+    height: 100%;
+    width: 65px;
+    text-align: left;
+    outline: solid 1px black;
+    color: #7a7a7a;
+}
+.consoleWindow ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.consoleWindow li {
+    padding: 3px;
+}
+
+/*
+    Console text entry types
+*/
+.error {
+    color: #fa5a5a;
+}
+.message {
+    color: #ffffff;
+}
+.download {
+    color: #d8cd71;
+}
+.info {
+    color: #60c661;
+}
